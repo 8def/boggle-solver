@@ -1,0 +1,59 @@
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+input[type=text] {
+  text-align: center;
+  width:25px;
+  height:25px;
+  font-size:25px;
+}
+
+button {
+  padding:4px;
+  margin: 4px;
+}
+
+span {
+  margin-right: 6px;
+  font-size: 20px;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+span:hover {
+  color: aqua;
+}
+
+#container {
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  overflow: hidden;
+}
+
+#solutions {
+  background: #EEE;
+  margin: 5px auto;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 30px;
+  justify-content: center
+}
+
+.glow {
+  background: #0FF;
+}
+
+.flat {
+  background: #FFF;
+}
