@@ -10,8 +10,8 @@ export const COORDS = []
   /*
   Recursively traverse the board to attempt all possible constructions of the remaining words and return solutions as two arrays
 
-  the first should contain solution words
-  the second should contain solution coordinates to highlight
+  the first contains solution words
+  the second contains solution coordinates to highlight
 
   return [ 
           [ "ex1", "ex2" ], 
@@ -83,19 +83,16 @@ function construct(
     }
   }
 
-  
   // remove marked coordinates
   coords = coords.filter(function (el) {
     return el != "X";
   });
     
-
   // CASE: no coords left, not a solution
-  if (coords.length < 1) {
+  if (coords.length < 1)
     return
-  }
 
-  // CASE: attempts remaining, send coords to construct()
+  // CASE: attempts remaining, send new coords to construct()
   for (let i=0; i<coords.length; i++) {
     var newVisited = [...visited]
     newVisited.push(coords[i])

@@ -120,6 +120,11 @@ function BoardDistance(x1, y1, x2, y2) {
   return Math.max(xDiff, yDiff)
 }
 
+// check if a letter is whitelisted
+function isWhitelisted(letter) {
+  return /^[a-zA-Z]+$/.test(letter)
+}
+
 export { 
          GetPos, 
          RandomLetter, 
@@ -128,5 +133,6 @@ export {
          CountCopies,
          LetterDistances,
          BoardDistances,
-         BoardDistance
+         BoardDistance,
+         isWhitelisted
        }

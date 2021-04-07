@@ -39,7 +39,8 @@ export default class Board extends React.Component {
 
     // update the old oldState
     let newState = this.state.letters
-    newState[pos[0]][pos[1]] = val
+    if (A.isWhitelisted(val) || val==="")
+      newState[pos[0]][pos[1]] = val.toLowerCase()
 
     // update state
     this.setState({letters: newState});
